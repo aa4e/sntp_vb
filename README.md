@@ -5,7 +5,7 @@
 
 - SNTP client:
 
-```
+```vbnet
 Dim client As New SntpClient(ServerAddress, ServerPort)
 AddHandler client.QueryServerCompleted, AddressOf QueryServerCompletedHandler
 Client.BeginQueryServer()
@@ -17,7 +17,7 @@ End Sub
 
 - SNTP server:
 
-```
+```vbnet
 Dim server As New SntpServer()
 AddHandler server.RequestReceived, AddressOf RequestReceivedHandler
 AddHandler server.StateChanged, AddressOf StateChangedHandler
